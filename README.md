@@ -123,10 +123,6 @@ v8_4_Plus/
 
 ---
 ## 강의 관련 링크 모음
-### 1. PPT 공유
-```
-노션 참고
-```
 
 ### 2. model.fuse
 [model.fuse](https://docs.ultralytics.com/reference/engine/model/#ultralytics.engine.model.Model.fuse)
