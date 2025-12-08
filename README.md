@@ -1,6 +1,5 @@
-# 251226_2601_PTU
-
-# WTDC(Woori_Talent_Development_Center) 
+# 250000_0000_우리인재개발원
+인파 밀집 + 교차로 교통 시스템 통합
 
 ### 강의 주제
 ```
@@ -8,7 +7,6 @@
 ```
 
 ### 강의 내용
-
 ```
 1. 개발 요구사항 분석 및 기술 분석
 교차로 교통 장애물 및 이벤트 감지 시스템의 필요성과 기술적 요구사항을 분석
@@ -56,8 +54,7 @@ Dashboard와의 연동, 시스템 테스트 및 디버깅
 (8교시, 총 400분)
 ```
 
-### 강의 목차(Beta)
-
+### 강의 목차
 ```
 v0_Install anaconda/
 → Anaconda 설치 및 환경 설정
@@ -127,12 +124,8 @@ v8_4_Plus/
     → Export TensorRT
 ```
 
-### API_KEY
-```
-db5c00dc1fce45c49049bff225a0fea6
-```
-
-## 추가 공유 내용
+---
+## 참고 사항
 ### 1. requirements.txt 생성 라이브러리 piqres
 ```
 1. 기존 pip freeze 와 비교
@@ -195,14 +188,18 @@ db5c00dc1fce45c49049bff225a0fea6
 ### 11. Miro
 [Miro](https://miro.com/app/dashboard/)
 
+### 12. MLOPS
+[Google MLOps](https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko#devops_versus_mlops)
+
+### 13. LabelImg
+[LabelImg](https://github.com/HumanSignal/labelImg)<br>
+
+### 14. RoboFlow
+[Roboflow](https://roboflow.com/)<br>
+
+### 15. Pixels
+[pixels](https://roboflow.com/)<br>
 ---
-
-
-# 250000_0000_우리인재개발원
-인파 밀집 + 교차로 교통 시스템 통합
-
-# MLOPS
-https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko#devops_versus_mlops
 
 # https://its.go.kr/
 APIKEY
@@ -216,10 +213,6 @@ url_cctv = f"https://openapi.its.go.kr:9443/cctvInfo?apiKey={key}&type={Type}&cc
 ```
 
 # 수업 관련 링크 모음
-[LabelImg](https://github.com/HumanSignal/labelImg)<br>
-[Roboflow](https://roboflow.com/)<br>
-[pixels](https://roboflow.com/)<br>
-
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3a89f014-558f-4191-ba25-583971a1c034" width="300">
