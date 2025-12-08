@@ -38,9 +38,8 @@ Dashboard와의 연동, 시스템 테스트 및 디버깅
 ```
 
 ### 강의 시간
-
 ```
-~~1) 09:30 ~ 10:20(50분)~~
+1) 09:30 ~ 10:20(50분)
 2) 10:30 ~ 11:20(50분)
 3) 11:30 ~ 12:20(50분)
 4) 12:30 ~ 13:20(50분)
@@ -124,92 +123,89 @@ v8_4_Plus/
 
 ---
 ## 강의 관련 링크 모음
-### 1. requirements.txt 생성 라이브러리 piqres
-```
-1. 기존 pip freeze 와 비교
-2. pip freeze > requirements.txt
-3. pip install pipreqs
-3-1. pipreqs .
-```
-
-### 2. ngrok 외부 호스팅
-```
-1. ngrok 설치 https://ngrok.com/downloads/windows?tab=download
-2. 실행 명령어 ngrok http 8051(자신의 포트번호)
-3. 회원 가입 후 키 발급 확인
-3-1. https://dashboard.ngrok.com/authtokens
-4. 키 인증
-4-1. ngrok config add-authtoken 32DAhV31Wq2vLJIr5WKWQ9vyN8v_2s9tVHTeD1WdCK23oVjFa
-5. ngrok http 8080(자신의 포트번호) 외부 호스팅 2시간 무료
-```
-
-### 3. PPT 공유
+### 1. PPT 공유
 ```
 노션 참고
 ```
 
-### 4. model.fuse
+### 2. model.fuse
 [model.fuse](https://docs.ultralytics.com/reference/engine/model/#ultralytics.engine.model.Model.fuse)
 
 ---
 
-### 5. YOLOE
+### 3. YOLOE
 [YOLOE](https://docs.ultralytics.com/ko/models/yoloe/)
 
 ---
 
-### 6. OpenVINO
+### 4. OpenVINO
 [OpenVINO](https://docs.ultralytics.com/ko/guides/optimizing-openvino-latency-vs-throughput-modes/)
 
 ---
 
-### 7. Streamlit
+### 6. Streamlit
 [Streamlit](https://docs.ultralytics.com/ko/guides/streamlit-live-inference/)
 
 ---
 
-### 8. Training
+### 7. Training
 [Training](https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results/)
 
 ---
 
-### 9. Line, MultiThread 관련 Ultralytics 공식 문서 자료
+### 8. Line, MultiThread 관련 Ultralytics 공식 문서 자료
 [Ultralytics](https://docs.ultralytics.com/ko/modes/track/#faq)
 
 ---
 
-### 10. TensorRT 관련 Ultralytics 공식 문서 자료
+### 9. TensorRT 관련 Ultralytics 공식 문서 자료
 [Ultralytics TensorRT](https://docs.ultralytics.com/ko/integrations/tensorrt/)
 
 ---
 
-### 11. Miro
+### 01. Miro
 [Miro](https://miro.com/app/dashboard/)
 
 ---
 
-### 12. MLOPS
+### 11. MLOPS
 [Google MLOps](https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko#devops_versus_mlops)
 
 ---
 
-### 13. LabelImg
+### 12. LabelImg
 [LabelImg](https://github.com/HumanSignal/labelImg)<br>
 
 ---
 
-### 14. RoboFlow
+### 13. RoboFlow
 [Roboflow](https://roboflow.com/)<br>
 
 ---
 
-### 15. Pixels
+### 14. Pixels
 [pixels](https://roboflow.com/)<br>
 
 ---
 
-### 16. ITS
+### 15. ITS
 [ITS](https://its.go.kr/)<br>
+
+### 16. 성능평가 관련
+🚩 [Precision-Recall vs. ROC Curve - CosmicCoding](https://cosmiccoding.com.au/tutorials/pr_vs_roc_curves/) <br>
+🚩 [Receiver Operating Characteristic (ROC) - Wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) <br> 
+🚩 [Confusion Matrix - Wikipedia](https://en.wikipedia.org/wiki/Confusion_matrix) <br>
+🚩 [ROC Curve & AUC 설명 - Dream2Reality 블로그](https://dream2reality.tistory.com/9) <br>
+🚩 [머신러닝 성능 측정 방법 - Meme2515 블로그](https://meme2515.github.io/machine_learning/performance_measurement/) <br>
+🚩 [분류 성능 지표 (Precision, Recall) - AI-Com 블로그](https://ai-com.tistory.com/entry/ML-%EB%B6%84%EB%A5%98-%EC%84%B1%EB%8A%A5-%EC%A7%80%ED%91%9C-Precision%EC%A0%95%EB%B0%80%EB%8F%84-Recall%EC%9E%AC%ED%98%84%EC%9C%A8) <br>
+
+---
+
+### 17. 성능 평가 문제
+🚩 [Google Machine Learning Crash Course - Precision & Recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) <br>
+🚩 [Google Machine Learning Crash Course - Classification: ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) <br>
+
+---
 
 ---
 
@@ -245,11 +241,15 @@ url_cctv = f"https://openapi.its.go.kr:9443/cctvInfo?apiKey={key}&type={Type}&cc
   <img src="https://github.com/user-attachments/assets/5aa664df-7d71-4a70-88a1-1ea83d45786f" width="300">
 </p>
 
+---
+
 ### 4. YOLO custom_datasets 경로 셋팅
 ```
 coco8.yaml => path : coco8 폴더 경로, train : train 폴더 경로, val : val 폴더 경로
 model.train(data='coco8.yaml 파일 경로')
 ```
+
+---
 
 ### 5. Background images
 <img src="https://github.com/user-attachments/assets/052d795a-8361-4905-b325-8124e7ba729d" width="600">
@@ -257,13 +257,19 @@ model.train(data='coco8.yaml 파일 경로')
 FP => 거짓 탐지 => 오탐을 줄일 수 있다.
 ```
 
+---
+
 ### 6. Data Augmentation
 <p align="center">
   <img src="https://github.com/user-attachments/assets/81c866a3-c39d-4cb4-89d6-a7bc818e7a65" width="600">
 </p>
 
+---
+
 ### 7. 파이썬 경고음 넣기
 [더미 경고음 사이트](https://pixabay.com/ko/sound-effects/search/%EA%B2%BD%EA%B3%A0%EC%9D%8C/)
+
+---
 
 ```
 # MAC
@@ -282,7 +288,194 @@ playsound('./alarm.mp3')
 
 ---
 
+### 8. requirements.txt 생성 라이브러리 piqres
+```
+1. 기존 pip freeze 와 비교
+2. pip freeze > requirements.txt
+3. pip install pipreqs
+3-1. pipreqs .
+```
 
+---
+
+### 9. ngrok 외부 호스팅
+```
+1. ngrok 설치 https://ngrok.com/downloads/windows?tab=download
+2. 실행 명령어 ngrok http 8051(자신의 포트번호)
+3. 회원 가입 후 키 발급 확인
+3-1. https://dashboard.ngrok.com/authtokens
+4. 키 인증
+4-1. ngrok config add-authtoken 32DAhV31Wq2vLJIr5WKWQ9vyN8v_2s9tVHTeD1WdCK23oVjFa
+5. ngrok http 8080(자신의 포트번호) 외부 호스팅 2시간 무료
+```
+
+---
+
+### 10. requirements.txt 만들기
+```
+1. pip install pipreqs 설치
+2. 프로젝트 폴더 경로 이동
+3. pipreqs --savepath ./requirements.txt
+4. 저장 경로 확인
+```
+
+---
+
+### 11. Twilio 활용하여 Python으로 문자 알림 보내기
+[Twilio](https://www.twilio.com/en-us)
+```
+Twilio 회원가입 후
+번호 등록 및 생성 후 코드 변환하여 사용
+```
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd68c8dd-626e-475c-97fc-a50108abdd10" width="1000">
+</p>
+
+---
+
+### 12. README.md 파일 작성법 및 소개
+```
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+```
+
+---
+
+### 13. Precision(정밀도)
+```
+모델의 Positive로 판정한 것 중, 실제 Positive 비율
+```
+
+---
+
+### 14. Recall(재현율)
+```
+실제 Positive 중 모델의 Positive 비율
+```
+
+---
+
+### 15. F1-score
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4fdffc5c-ae29-4dab-8ec0-5f80e025d268" width="300">
+</p>
+
+---
+
+### 16. 조화평균(여러 값의 평균을 구할 때, 작은 값이 상대적으로 더 큰 영향을 주는 평균 방식)
+```
+1. Precision과 Recall 중 하나라도 낮으면 F1-score도 낮아짐
+  예를 들어 Precision = 90, Recall = 10이면 일반 평균은 50이지만, 조화평균을 쓰면 F1-score ≈ 18.2로 낮아짐 → 한쪽이 낮으면 전체 성능도 낮게 반영
+
+2. 둘의 균형을 맞추는 데 효과적
+  Precision이 높지만 Recall이 낮거나, 그 반대인 경우를 방지
+
+3. 극단적인 값을 줄여줌
+  예를 들어, 일반 평균(산술평균)은 극단적인 값(예: 한쪽이 100, 한쪽이 1)에 영향을 많이 받지만, 조화평균은 이를 보완
+```
+
+---
+
+### 17. ROC Curve
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/91d7948a-ec7e-483a-b8eb-e0e1a53e0f60" width="300">
+</p>
+```
+✅ ROC Curve는 모델의 전체적인 분류 성능을 평가하는 곡선
+✅ FPR vs. TPR의 관계를 나타내며, 좌상단에 가까울수록 좋은 모델
+✅ AUC 값이 클수록 좋은 성능을 의미 (1에 가까울수록 우수)
+```
+
+---
+
+### 18. Precision과 Recall의 경우의 수
+| Precision (정밀도) | Recall (재현율) | 의미                                       |
+|-------------------|---------------|------------------------------------------|
+| 높음               | 높음            | 이상적인 모델 (오탐과 미탐이 적음)              |
+| 높음               | 낮음            | 탐지를 신중하게 하지만 많은 객체를 놓침 (미탐 증가) |
+| 낮음               | 높음            | 많은 객체를 탐지하지만 오탐이 많음 (오탐 증가)     |
+| 낮음               | 낮음            | 모델 성능이 매우 나쁨 (오탐과 미탐이 많음)        |
+
+### 19. Precision-Recall 관련 문제
+#### 객체 탐지 모델을 적용했더니 탐지된 객체는 대부분 정확하지만, 많은 실제 객체를 놓치는 경우
+```
+✅ 정답: Precision ↑, Recall ↓
+✅ 해결 방법: Recall을 높이기 위해 Confidence Threshold를 낮추고 탐지 범위를 확대해야 한다.
+```
+
+---
+
+#### 탐지 시스템에서 거의 모든 사람을 탐지할 수 있지만, 실제 사람이 아닌 그림자나 마네킹도 사람으로 오탐하는 경우
+```
+✅ 정답: Precision ↓, Recall ↑
+✅ 해결 방법: Confidence Threshold를 높이고, Hard Negative Mining을 적용
+```
+
+---
+
+#### 탐지된 객체 중 상당수가 오탐이며, 실제 객체도 잘 탐지되지 않는 경우가 발생
+```
+✅ 정답: Precision ↓, Recall ↓
+✅ 해결 방법: 데이터셋을 개선하고, 모델을 추가 학습해야 한다. 또한, NMS와 Confidence Threshold를 적절히 조정하여 탐지 성능을 개선
+```
+
+---
+
+#### 모델이 적용된 후 탐지된 객체는 대부분 정확하고, 실제 객체도 놓치지 않고 탐지
+```
+✅ 정답: Precision ↑, Recall ↑
+✅ 설명: 이상적인 모델이며, 성능이 최적화된 상태
+```
+
+---
+
+### 20. Hard Negative Mining
+```
+객체 탐지 모델에서 오탐(False Positive)이 많은 경우, 특히 배경을 객체로 잘못 인식하는 문제를 해결하는 기법
+즉, 모델이 헷갈려하는 "어려운 배경(하드 네거티브)"을 학습 데이터로 추가하여 성능을 개선하는 방법
+```
+
+---
+
+### 21. Base64 인코딩
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84a0bfe9-ce05-46cc-84f1-ac3343aa3c73" width="600">
+</p>
+
+```
+문자열을 다시 디코딩하면 이미지로 돌아옵니다.
+```
+
+### 22. OpenAPI 설명
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9e80f6a1-f7c2-47ee-b162-a59e9cc888fb" width="1000">
+</p>
+
+### 23. Anaconda 환경 셋팅
+가상환경 생성
+```
+conda create -n "가상환경 이름" python=3.9
+$  conda create -n py39 python=3.9
+```
+
+가상환경 실행
+```
+conda activate "가상환경 이름"
+$  conda activate py39
+```
+
+가상환경 종료
+```
+conda deactivate 
+```
+
+라이브러리 설치
+```
+pip install "설치할 라이브러리"
+pip install ultralytics
+```
+
+---
 
 
 
@@ -329,198 +522,9 @@ python3 app.py
 
 
 
-## 💡requirements.txt 만들기
-```
-1. pip install pipreqs 설치
-2. 프로젝트 폴더 경로 이동
-3. pipreqs --savepath ./requirements.txt
-4. 저장 경로 확인
-```
-
-## 💡Twilio 활용하여 Python으로 문자 알림 보내기
-[Twilio](https://www.twilio.com/en-us)
-```
-Twilio 회원가입 후
-번호 등록 및 생성 후 코드 변환하여 사용
-```
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/bd68c8dd-626e-475c-97fc-a50108abdd10" width="1000">
-</p>
-
-## 💡README.md 파일 작성법 및 소개
-```
-https://gist.github.com/ihoneymon/652be052a0727ad59601
-```
-
-## 💡성능 평가 용어 설명👀
-#### Precision(정밀도)
-
-```
-모델의 Positive로 판정한 것 중, 실제 Positive 비율
-```
-
-#### Recall(재현율)
-
-```
-실제 Positive 중 모델의 Positive 비율
-```
-
-#### F1-score
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4fdffc5c-ae29-4dab-8ec0-5f80e025d268" width="300">
-</p>
-
-```
-Precision과 Recall의 조화평균
-```
-
-#### 조화평균(여러 값의 평균을 구할 때, 작은 값이 상대적으로 더 큰 영향을 주는 평균 방식)
-```
-1. Precision과 Recall 중 하나라도 낮으면 F1-score도 낮아짐
-  예를 들어 Precision = 90, Recall = 10이면 일반 평균은 50이지만, 조화평균을 쓰면 F1-score ≈ 18.2로 낮아짐 → 한쪽이 낮으면 전체 성능도 낮게 반영
-
-2. 둘의 균형을 맞추는 데 효과적
-  Precision이 높지만 Recall이 낮거나, 그 반대인 경우를 방지
-
-3. 극단적인 값을 줄여줌
-  예를 들어, 일반 평균(산술평균)은 극단적인 값(예: 한쪽이 100, 한쪽이 1)에 영향을 많이 받지만, 조화평균은 이를 보완
-```
-
-#### ROC Curve
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/91d7948a-ec7e-483a-b8eb-e0e1a53e0f60" width="300">
-</p>
-
-```
-✅ ROC Curve는 모델의 전체적인 분류 성능을 평가하는 곡선
-✅ FPR vs. TPR의 관계를 나타내며, 좌상단에 가까울수록 좋은 모델
-✅ AUC 값이 클수록 좋은 성능을 의미 (1에 가까울수록 우수)
-```
-
-#### 참고 링크
-🚩 [Precision-Recall vs. ROC Curve - CosmicCoding](https://cosmiccoding.com.au/tutorials/pr_vs_roc_curves/) <br>
-🚩 [Receiver Operating Characteristic (ROC) - Wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) <br> 
-🚩 [Confusion Matrix - Wikipedia](https://en.wikipedia.org/wiki/Confusion_matrix) <br>
-🚩 [ROC Curve & AUC 설명 - Dream2Reality 블로그](https://dream2reality.tistory.com/9) <br>
-🚩 [머신러닝 성능 측정 방법 - Meme2515 블로그](https://meme2515.github.io/machine_learning/performance_measurement/) <br>
-🚩 [분류 성능 지표 (Precision, Recall) - AI-Com 블로그](https://ai-com.tistory.com/entry/ML-%EB%B6%84%EB%A5%98-%EC%84%B1%EB%8A%A5-%EC%A7%80%ED%91%9C-Precision%EC%A0%95%EB%B0%80%EB%8F%84-Recall%EC%9E%AC%ED%98%84%EC%9C%A8) <br>
-
-#### 예제 문제
-🚩 [Google Machine Learning Crash Course - Precision & Recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) <br>
-🚩 [Google Machine Learning Crash Course - Classification: ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) <br>
-
-## 💡Precision과 Recall의 경우의 수
-| Precision (정밀도) | Recall (재현율) | 의미                                       |
-|-------------------|---------------|------------------------------------------|
-| 높음               | 높음            | 이상적인 모델 (오탐과 미탐이 적음)              |
-| 높음               | 낮음            | 탐지를 신중하게 하지만 많은 객체를 놓침 (미탐 증가) |
-| 낮음               | 높음            | 많은 객체를 탐지하지만 오탐이 많음 (오탐 증가)     |
-| 낮음               | 낮음            | 모델 성능이 매우 나쁨 (오탐과 미탐이 많음)        |
-
-
-## 📝Precision-Recall 관련 문제
-
-#### 객체 탐지 모델을 적용했더니 탐지된 객체는 대부분 정확하지만, 많은 실제 객체를 놓치는 경우
-```
-✅ 정답: Precision ↑, Recall ↓
-✅ 해결 방법: Recall을 높이기 위해 Confidence Threshold를 낮추고 탐지 범위를 확대해야 한다.
-```
-
-#### 탐지 시스템에서 거의 모든 사람을 탐지할 수 있지만, 실제 사람이 아닌 그림자나 마네킹도 사람으로 오탐하는 경우
-```
-✅ 정답: Precision ↓, Recall ↑
-✅ 해결 방법: Confidence Threshold를 높이고, Hard Negative Mining을 적용
-```
-
-#### 탐지된 객체 중 상당수가 오탐이며, 실제 객체도 잘 탐지되지 않는 경우가 발생
-```
-✅ 정답: Precision ↓, Recall ↓
-✅ 해결 방법: 데이터셋을 개선하고, 모델을 추가 학습해야 한다. 또한, NMS와 Confidence Threshold를 적절히 조정하여 탐지 성능을 개선
-```
-
-#### 모델이 적용된 후 탐지된 객체는 대부분 정확하고, 실제 객체도 놓치지 않고 탐지
-```
-✅ 정답: Precision ↑, Recall ↑
-✅ 설명: 이상적인 모델이며, 성능이 최적화된 상태
-```
-
-## 관련 용어 설명
-#### Hard Negative Mining
-```
-객체 탐지 모델에서 오탐(False Positive)이 많은 경우, 특히 배경을 객체로 잘못 인식하는 문제를 해결하는 기법
-즉, 모델이 헷갈려하는 "어려운 배경(하드 네거티브)"을 학습 데이터로 추가하여 성능을 개선하는 방법
-```
-
-#### Base64 인코딩
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/84a0bfe9-ce05-46cc-84f1-ac3343aa3c73" width="600">
-</p>
-
-```
-문자열을 다시 디코딩하면 이미지로 돌아옵니다.
-```
-
 #### 이메일
 ```
 ai.murbachovski@gmail.com
-```
-
-
-# addinedu
-```
-0. Install Anaconda
-1. Install VSCode
-2. Python
-3. FastAPI
-4. YOLO
-5. HuggingFace
-6. OpenAPI
-7. Transformers
-8. BLIP
-9. BERT
-10. OCR
-```
-
-# OpenAPI
-```
-key = ""
-url_cctv = f"https://openapi.its.go.kr:9443/cctvInfo?apiKey={key}&type={Type}&cctvType=1&minX={minX}&maxX={maxX}&minY={minY}&maxY={maxY}&getType={getType}"
-```
-
-# OpenAPI 설명
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/9e80f6a1-f7c2-47ee-b162-a59e9cc888fb" width="1000">
-</p>
-
-# OCR 이미지 다운로드 경로
-```
-https://cran.r-project.org/web/packages/tesseract/vignettes/intro.html
-```
-
-# Anaconda 환경 셋팅
-가상환경 생성
-```
-conda create -n "가상환경 이름" python=3.9
-$  conda create -n py39 python=3.9
-```
-
-가상환경 실행
-```
-conda activate "가상환경 이름"
-$  conda activate py39
-```
-
-가상환경 종료
-```
-conda deactivate 
-```
-
-라이브러리 설치
-```
-pip install "설치할 라이브러리"
-pip install ultralytics
 ```
 
 # 강의 내용 참고 자료
