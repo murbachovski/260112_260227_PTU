@@ -471,6 +471,8 @@ pip install "설치할 라이브러리"
 pip install ultralytics
 ```
 
+---
+
 ### 23. README.md 파일 작성법 및 소개
 ```
 https://gist.github.com/ihoneymon/652be052a0727ad59601
@@ -478,7 +480,7 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 
 ---
 
-## HuggingFace<br>
+### 24. HuggingFace<br>
 [허깅페이스](https://huggingface.co/)<br>
 ```
 1. 회원가입
@@ -489,28 +491,38 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 6. 코드 실행
 ```
 
-- - -
+---
+
 **<p>$\it{\large{\color{#DD6565}25.04.07.월}}$</p>**
 **Original Image**<br>
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/user-attachments/assets/9a975c01-97eb-46e6-a755-3042c6919213" width="500" height="500" style="object-fit: cover;">
 </div>
 
+---
+
  **Background Image**(based on ChatGPT)<br>
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/user-attachments/assets/1f34235a-210f-45a8-a544-366266fa65a4" width="500" height="500" style="object-fit: cover;">
 </div>
 
+---
+
 **tips_for_best_training_results**<br>
 [tips_for_best_training_results](https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results)<br>
 
-- - -
+---
+
 **<p>$\it{\large{\color{#DD6565}25.04.08.화}}$</p>**
 **Resuming Interrupted Trainings**<br>
 [YOLO Train Parameter resume](https://docs.ultralytics.com/modes/train/#resuming-interrupted-trainings)<br>
 
+---
+
 **Transfer Learning with Frozen Layers**<br>
 [YOLO Train Parameter freeze](https://docs.ultralytics.com/yolov5/tutorials/transfer_learning_with_frozen_layers/)<br>
+
+---
 
 **Pruning**<br>
 [Model Pruning and Sparsity in YOLOv5](https://docs.ultralytics.com/yolov5/tutorials/model_pruning_and_sparsity/)<br>
@@ -518,11 +530,15 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
   <img src="https://github.com/user-attachments/assets/6257c65e-c700-4e30-83b8-32e9f5e33abd" width="700">
 </p>
 
+---
+
 **Quantization**<br>
 [Model Quantization](https://docs.ultralytics.com/guides/model-deployment-practices/#model-quantization)<br>
 <p align="left">
   <img src="https://github.com/user-attachments/assets/7703ab83-7ccc-48b2-b7cc-79eea977c767" width="700">
 </p>
+
+---
 
 ## 💡Tensorboard 확인
 ```
@@ -547,6 +563,8 @@ tensorboard --logdir="C:/Users/Administrator/Desktop/ai/runs/detect/train"
 visualize=True 옵션은 YOLO 모델의 추론 시 중간 레이어의 Feature Map(특징 맵) 을 이미지로 저장해주는 기능
 모델 내부가 어떻게 입력 영상을 해석하고 있는지 시각적으로 확인
 ```
+
+---
 
 ```
 밝은 영역: 해당 위치에서 강한 activation (특징 반응) 이 있었음을 의미
@@ -577,6 +595,8 @@ conda create -n "Youre_env_name" python=3.9
 conda activate py39
 ```
 
+---
+
 ### 라이브러리 설치
 ```
 1. pip install pipreqs 설치
@@ -585,3 +605,5 @@ conda activate py39
 4. 저장 경로 확인
 5. pip install -r ./requirements.txt
 ```
+
+---
