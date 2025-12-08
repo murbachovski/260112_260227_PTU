@@ -206,24 +206,90 @@ v8_4_Plus/
 ### 15. Pixels
 [pixels](https://roboflow.com/)<br>
 
+---
+
 ### 16. ITS
 [ITS](https://its.go.kr/)<br>
 
 ---
 
-
-APIKEY
+## 강의 관련 내용 모음
+### 1. APIKEY
 ```
 db5c00dc1fce45c49049bff225a0fea6
 ```
 
-# API 요청 URL 생성
+---
+
+### 2. API 요청 URL 생성
 ```
 url_cctv = f"https://openapi.its.go.kr:9443/cctvInfo?apiKey={key}&type={Type}&cctvType=1&minX={minX}&maxX={maxX}&minY={minY}&maxY={maxY}&getType={getType}"
 ```
 
+---
 
-TEAM
+### 3. 면적 측정
+
+1. [구글맵](https://www.google.co.kr/maps/?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46a67170-4d6c-4a3b-9f64-1d9f5f8c2a98" width="300">
+</p>
+
+2. [네이버지도](https://map.naver.com/p?c=15.00,0,0,0,dh)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/02d5db1d-1d19-4c20-b180-25c9655469a7" width="300">
+</p>
+
+3. [카카오맵](https://map.kakao.com/?nil_profile=title&nil_src=local)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5aa664df-7d71-4a70-88a1-1ea83d45786f" width="300">
+</p>
+
+### 4. YOLO custom_datasets 경로 셋팅
+```
+coco8.yaml => path : coco8 폴더 경로, train : train 폴더 경로, val : val 폴더 경로
+model.train(data='coco8.yaml 파일 경로')
+```
+
+### 5. Background images
+<img src="https://github.com/user-attachments/assets/052d795a-8361-4905-b325-8124e7ba729d" width="600">
+```
+FP => 거짓 탐지 => 오탐을 줄일 수 있다.
+```
+
+### 6. Data Augmentation
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/81c866a3-c39d-4cb4-89d6-a7bc818e7a65" width="600">
+</p>
+
+### 7. 파이썬 경고음 넣기
+[더미 경고음 사이트](https://pixabay.com/ko/sound-effects/search/%EA%B2%BD%EA%B3%A0%EC%9D%8C/)
+
+```
+# MAC
+import os
+os.system(afplay ./alarm.mp3)
+
+# MAC(비동기)
+import subprocess
+subprocess.Popen(["afplay", "./alarm.mp3"])
+
+# Winodws
+pip install playsound
+from playsound import playsound
+playsound('./alarm.mp3')
+```
+
+---
+
+
+
+
+
+
+
+
+## 팀 프로젝트 관련 내용 모음
 ---
 ## 💡팀 현황
 1. [Pyeongtaek_AI_YOLO_Team](https://github.com/rivermin01/Pyeongtaek_AI_YOLO_Team/tree/Develop)<br>
@@ -261,77 +327,7 @@ cd team_project
 python3 app.py
 ```
 
-## 💡CCTV 접근
-1. [카카오맵](https://map.kakao.com/?nil_profile=title&nil_src=local)
-<p align="center">
-  <img width="1081" alt="Image" src="https://github.com/user-attachments/assets/2be59a8d-c2cc-4867-9db1-d255f4de3303" width="300">
-</p>
 
-### 접근 방법
-```
-카카오맵 CCTV 접근 => 소스코드(F12) 확인 => 비디오 링크 복사 => cv2.CaptureVideo() 적용 => 영상 스트리밍
-```
-### 예시 링크
-```
-cap = cv2.VideoCapture("https://cctvsec.ktict.co.kr/6246/cCCtjN+N+EnDEdCu9wHS00X5iOMXIc41FwpwasljdCsrysX/jGzlP6b54WADcjaY")
-```
-
-## 💡면적 측정
-
-1. [구글맵](https://www.google.co.kr/maps/?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/46a67170-4d6c-4a3b-9f64-1d9f5f8c2a98" width="300">
-</p>
-
-2. [네이버지도](https://map.naver.com/p?c=15.00,0,0,0,dh)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/02d5db1d-1d19-4c20-b180-25c9655469a7" width="300">
-</p>
-
-3. [카카오맵](https://map.kakao.com/?nil_profile=title&nil_src=local)
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5aa664df-7d71-4a70-88a1-1ea83d45786f" width="300">
-</p>
-
-### 설명
-```
-각 웹에서 거리 및 면적 측정 가능
-```
-
-## 💡YOLO custom_datasets 경로 셋팅
-```
-coco8.yaml => path : coco8 폴더 경로, train : train 폴더 경로, val : val 폴더 경로
-model.train(data='coco8.yaml 파일 경로')
-```
-
-## 💡Background images
-<img src="https://github.com/user-attachments/assets/052d795a-8361-4905-b325-8124e7ba729d" width="600">
-
-```
-FP => 거짓 탐지 => 오탐을 줄일 수 있다.
-```
-## 💡Data Augmentation
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/81c866a3-c39d-4cb4-89d6-a7bc818e7a65" width="600">
-</p>
-
-## 💡파이썬 경고음 넣기
-[더미 경고음 사이트](https://pixabay.com/ko/sound-effects/search/%EA%B2%BD%EA%B3%A0%EC%9D%8C/)
-
-```
-# MAC
-import os
-os.system(afplay ./alarm.mp3)
-
-# MAC(비동기)
-import subprocess
-subprocess.Popen(["afplay", "./alarm.mp3"])
-
-# Winodws
-pip install playsound
-from playsound import playsound
-playsound('./alarm.mp3')
-```
 
 ## 💡requirements.txt 만들기
 ```
