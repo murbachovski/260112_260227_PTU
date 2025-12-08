@@ -207,9 +207,12 @@ v8_4_Plus/
 
 ---
 
----
-
 ## 강의 관련 내용 모음
+### 00. OpenAPI 설명
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9e80f6a1-f7c2-47ee-b162-a59e9cc888fb" width="1000">
+</p>
+
 ### 1. APIKEY
 ```
 db5c00dc1fce45c49049bff225a0fea6
@@ -446,12 +449,9 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 문자열을 다시 디코딩하면 이미지로 돌아옵니다.
 ```
 
-### 22. OpenAPI 설명
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/9e80f6a1-f7c2-47ee-b162-a59e9cc888fb" width="1000">
-</p>
+---
 
-### 23. Anaconda 환경 셋팅
+### 22. Anaconda 환경 셋팅
 가상환경 생성
 ```
 conda create -n "가상환경 이름" python=3.9
@@ -475,7 +475,7 @@ pip install "설치할 라이브러리"
 pip install ultralytics
 ```
 
-### 24. README.md 파일 작성법 및 소개
+### 23. README.md 파일 작성법 및 소개
 ```
 https://gist.github.com/ihoneymon/652be052a0727ad59601
 ```
