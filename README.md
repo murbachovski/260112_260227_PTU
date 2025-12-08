@@ -187,6 +187,8 @@ v8_4_Plus/
 ### 15. ITS
 [ITS](https://its.go.kr/)<br>
 
+---
+
 ### 16. 성능평가 관련
 🚩 [Precision-Recall vs. ROC Curve - CosmicCoding](https://cosmiccoding.com.au/tutorials/pr_vs_roc_curves/) <br>
 🚩 [Receiver Operating Characteristic (ROC) - Wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) <br> 
@@ -504,11 +506,6 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/user-attachments/assets/1f34235a-210f-45a8-a544-366266fa65a4" width="500" height="500" style="object-fit: cover;">
 </div>
-
----
-
-**tips_for_best_training_results**<br>
-[tips_for_best_training_results](https://docs.ultralytics.com/yolov5/tutorials/tips_for_best_training_results)<br>
 
 ---
 
